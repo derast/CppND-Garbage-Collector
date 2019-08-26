@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(smart_pointer)
+set(CMAKE_CXX_FLAGS "-g")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
+include_directories(include)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(smart_pointer.bin ${SOURCES})
